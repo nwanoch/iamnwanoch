@@ -58,9 +58,9 @@ export default function Logo(props) {
                   id="och"
                   transform="translate(819.345 273.406)"
                   fill="#fff"
-                  font-size="45"
-                  font-family="Milliard-Light, Milliard"
-                  font-weight="300"
+                  fontSize="45"
+                  fontFamily="Milliard-Light, Milliard"
+                  fontWeight="300"
                 >
                   <tspan x="0" y="0">
                     och
