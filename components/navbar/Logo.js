@@ -4,10 +4,10 @@ import { Box, Text } from "@chakra-ui/react";
 export default function Logo(props) {
   return (
     <Box {...props}>
-      <Text fontSize="lg" color="red" fontWeight="bold">
+      <Text fontSize="sm" color="white" fontWeight="bold">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="208.511"
+          width="120"
           height="64"
           viewBox="0 0 208.511 64"
         >
