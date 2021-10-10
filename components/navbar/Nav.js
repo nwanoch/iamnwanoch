@@ -55,7 +55,6 @@ const Header = (props) => {
       px={{ base: 8, md: 32 }}
       py={8}
       bg={"#005D5D"}
-      //   bg={["primary.500", "primary.500", "transparent", "transparent"]}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}
     >
