@@ -3,7 +3,7 @@ import React from "react";
 
 function Hero({ children }) {
   return (
-    <Box height={"95vh"} width={"100%"} bg="#005D5D">
+    <Box height={{ md: "95vh" }} width={"100%"} bg="#008080">
       {children}
     </Box>
   );

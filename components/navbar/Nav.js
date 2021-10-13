@@ -54,7 +54,7 @@ const Header = (props) => {
       mb={8}
       px={{ base: 8, md: 32 }}
       py={8}
-      bg={"#005D5D"}
+      bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}
     >
@@ -76,7 +76,7 @@ const Header = (props) => {
         <Flex
           display={{ base: "none", md: "flex" }}
           align="center"
-          bg="#005D5D"
+          bg="#008080"
           justify={["center", "space-between", "flex-end", "flex-end"]}
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
@@ -94,8 +94,10 @@ const Header = (props) => {
           style={{ marginTop: "14vh" }}
         >
           <Flex
+            position="relative"
+            zIndex={5553}
             align="center"
-            bg="#005D5D"
+            bg="#008080"
             justify={["center", "space-between", "flex-end", "flex-end"]}
             direction={["column", "row", "row", "row"]}
             pt={[4, 4, 0, 0]}
