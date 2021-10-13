@@ -65,7 +65,7 @@ const Header = (props) => {
         />
       </Flex>
 
-      <Box display={{ base: "block", md: "none" }} onClick={toggleMenu}>
+      <Box display={{ base: "block", md: "none" }} onClick={toggleMenu} padding={5}>
         {show ? <CloseIcon /> : <MenuIcon />}
       </Box>
 
