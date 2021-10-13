@@ -18,7 +18,7 @@ function HeroContent() {
         w={{ base: "100%", md: "60%" }}
         backgroundImage={{ base: "url('nwanochie.png')", md: " " }}
         backgroundPosition="center"
-        backgroundColor="teal"
+        backgroundColor="rgba(0, 128, 128, 0.5); "
         backgroundBlendMode="soft-light"
         backgroundSize="contain"
         backgroundRepeat="no-repeat"
