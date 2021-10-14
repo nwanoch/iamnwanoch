@@ -15,7 +15,6 @@ function ProjectCards(props) {
       boxShadow={"xl"}
       _hover={{
         boxShadow: "2xl",
-        rounded: "2xl",
         transition: "ease 200ms",
       }}
     >
