@@ -1,9 +1,14 @@
 import { Flex } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Stack, Text } from "@chakra-ui/layout";
 import { Image, Button } from "@chakra-ui/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function HeroContent() {
+  useEffect(() => {
+    AOS.init({ offset: 300, duration: 0, once: true });
+  }, []);
   return (
     <Flex
       pb={{ base: 10, md: 0 }}
@@ -13,6 +18,8 @@ function HeroContent() {
       direction={{ base: "column", md: "row" }}
     >
       <Box
+        data-aos="fade-up"
+        data-aos-duration="500"
         w={{ base: "100%", md: "65%" }}
         backgroundImage={{ base: "url('nwanochie.png')", md: " " }}
         backgroundPosition="center"
@@ -85,6 +92,8 @@ function HeroContent() {
         textAlign="center"
       >
         <Image
+          data-aos="fade-up"
+          data-aos-duration="500"
           fit="cover"
           ml={{ md: "auto" }}
           w={{ base: "90%", md: "100%" }}
