@@ -10,13 +10,7 @@ function Projects() {
         Projects
       </Text>
       <Text color="gray.600">Collections of my works</Text>
-      <Box
-        width="300px"
-        mt="5px"
-        h="1px"
-        bg="green.100"
-        // bgGradient="linear(to-l, #FFD201, #24285B)"
-      ></Box>
+      <Box width="300px" mt="5px" h="1px" bg="green.100"></Box>
 
       <SimpleGrid columns={{ sm: 1, md: 3 }} spacing={5}>
         <ProjectCards

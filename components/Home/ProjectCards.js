@@ -30,7 +30,14 @@ function ProjectCards(props) {
         {props.content}
       </Text>
       <Link href={props.url} isExternal>
-        <Button colorScheme="green" size="sm" px="30px" py="5px" mt="15px" rounded="sm">
+        <Button
+          colorScheme="green"
+          size="sm"
+          px="30px"
+          py="5px"
+          mt="15px"
+          rounded="sm"
+        >
           Visit
         </Button>
       </Link>
