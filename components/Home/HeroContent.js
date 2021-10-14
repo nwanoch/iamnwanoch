@@ -13,7 +13,7 @@ function HeroContent() {
       direction={{ base: "column", md: "row" }}
     >
       <Box
-        w={{ base: "100%", md: "60%" }}
+        w={{ base: "100%", md: "65%" }}
         backgroundImage={{ base: "url('nwanochie.png')", md: " " }}
         backgroundPosition="center"
         backgroundColor="rgba(0, 128, 128); "
@@ -32,15 +32,16 @@ function HeroContent() {
           fontWeight="bold"
           lineHeight="110%"
         >
-          Immersed In 
+          Immersed In&nbsp;
+          <Text as="kbd" display={{ base: "block", md: "none" }}></Text>
           <Text as="span" color="#FFD201">
             Designing
           </Text>
-          &
+          &nbsp;&&nbsp; <br />
           <Text as="span" color="#FFD201">
             Developing
           </Text>
-          Web Application
+          &nbsp; Web Application
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A software developer with about 2yrs + experience in designing,
