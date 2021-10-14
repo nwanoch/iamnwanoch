@@ -65,7 +65,11 @@ const Header = (props) => {
         />
       </Flex>
 
-      <Box display={{ base: "block", md: "none" }} onClick={toggleMenu} padding={5}>
+      <Box
+        display={{ base: "block", md: "none" }}
+        onClick={toggleMenu}
+        padding={5}
+      >
         {show ? <CloseIcon /> : <MenuIcon />}
       </Box>
 
@@ -101,6 +105,7 @@ const Header = (props) => {
             justify={["center", "space-between", "flex-end", "flex-end"]}
             direction={["column", "row", "row", "row"]}
             pt={[4, 4, 0, 0]}
+            display={{ base: "flex", md: "none" }}
           >
             <MenuItem to="/">Home</MenuItem>
             <MenuItem to="/about">About me</MenuItem>

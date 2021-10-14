@@ -41,7 +41,7 @@ function HeroContent() {
           <Text as="span" color="#FFD201">
             Developing
           </Text>
-          &nbsp; Web Application
+          &nbsp;Web Application
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A software developer with about 2yrs + experience in designing,
@@ -80,14 +80,14 @@ function HeroContent() {
       </Box>{" "}
       <Box
         display={{ base: "none", md: "block" }}
-        w={{ base: "100%", md: "40%" }}
+        w={{ base: "100%", md: "35%" }}
         py={{ base: 5 }}
         textAlign="center"
       >
         <Image
           fit="cover"
           ml={{ md: "auto" }}
-          w={{ base: "90%", md: "70%" }}
+          w={{ base: "90%", md: "100%" }}
           h={{ base: 64, md: "full" }}
           loading="lazy"
           src={"nwanochie.png"}
