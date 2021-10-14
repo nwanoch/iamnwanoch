@@ -9,23 +9,22 @@ function HeroContent() {
       pb={{ base: 10, md: 0 }}
       justify="space-between"
       px={{ base: 8, md: 32 }}
-      position="relative"
       align="center"
-      zIndex={0}
       direction={{ base: "column", md: "row" }}
     >
       <Box
-        w={{ base: "100%", md: "60%" }}
+        w={{ base: "100%", md: "65%" }}
         backgroundImage={{ base: "url('nwanochie.png')", md: " " }}
         backgroundPosition="center"
-        backgroundColor="rgba(0, 128, 128, 0.5); "
+        backgroundColor="rgba(0, 128, 128); "
         backgroundBlendMode="soft-light"
         backgroundSize="contain"
         backgroundRepeat="no-repeat"
       >
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           Hi! I am Emmanuel Nwanochie
-        </Text>{" "}
+        </Text>
+
         <Text
           color="white"
           mb={2}
@@ -33,23 +32,24 @@ function HeroContent() {
           fontWeight="bold"
           lineHeight="110%"
         >
-          Immersed In{" "}
+          Immersed In&nbsp;
+          <Text as="kbd" display={{ base: "block", md: "none" }}></Text>
           <Text as="span" color="#FFD201">
             Designing
-          </Text>{" "}
-          &{" "}
+          </Text>
+          &nbsp;&&nbsp; <br />
           <Text as="span" color="#FFD201">
             Developing
-          </Text>{" "}
-          Web Application
-        </Text>{" "}
+          </Text>
+          &nbsp; Web Application
+        </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A software developer with about 2yrs + experience in designing,
-          developing and testing mobile and web applications. Uses Reactjs,
-          Nextjs, Redux, TailwindCss, Chakra-Ui, Nodejs amongst other tools to
-          effectively translate user and business needs into functional
-          softwares codes.
+          developing and testing web applications. Uses Reactjs, Nextjs, Redux,
+          TailwindCss, Chakra-Ui, Nodejs amongst other tools to effectively
+          translate user and business needs into functional softwares codes.
         </Text>
+
         <Stack spacing={4} direction="row" align="center" mt="5">
           <Button
             px={6}
