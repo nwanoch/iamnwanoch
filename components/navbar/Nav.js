@@ -53,7 +53,7 @@ const Header = (props) => {
       w="100%"
       mb={8}
       px={{ base: 8, md: 32 }}
-      py={8}
+      py={4}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}
