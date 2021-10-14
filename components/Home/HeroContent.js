@@ -48,7 +48,7 @@ function HeroContent() {
           <Text as="span" color="#FFD201">
             Developing
           </Text>
-          &nbsp;Web Application
+          &nbsp;Web Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A software developer with about 2yrs + experience in designing,
