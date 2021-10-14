@@ -58,7 +58,7 @@ function HeroContent() {
         </Text>
 
         <Stack spacing={4} direction="row" align="center" mt="5">
-          <Button
+          {/* <Button
             px={6}
             bg="#fff"
             color="#24285B"
@@ -70,13 +70,13 @@ function HeroContent() {
             borderRadius="sm"
           >
             Projects
-          </Button>
+          </Button> */}
           <Button
             bg="#24285B"
             color="#fff"
             _hover={{
-              bg: "#FFD201",
-              color: "#fff",
+              bg: "#fff",
+              color: "#24285B",
             }}
             size="md"
             borderRadius="sm"
