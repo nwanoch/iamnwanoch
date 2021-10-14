@@ -1,5 +1,6 @@
+import { Button } from "@chakra-ui/button";
 import { useColorModeValue } from "@chakra-ui/color-mode";
-import { Box, Text } from "@chakra-ui/layout";
+import { Box, Link, Text } from "@chakra-ui/layout";
 import React from "react";
 function ProjectCards(props) {
   return (
@@ -11,7 +12,12 @@ function ProjectCards(props) {
       mt={15}
       mr={{ base: "0", md: "20px" }}
       color="blackAlpha.700"
-      boxShadow={"2xl"}
+      boxShadow={"xl"}
+      _hover={{
+        boxShadow: "2xl",
+        rounded: "2xl",
+        transition: "ease 200ms",
+      }}
     >
       <Text color="gray.600">{props.title}</Text>
       <Box
@@ -24,6 +30,11 @@ function ProjectCards(props) {
         {" "}
         {props.content}
       </Text>
+      <Link href={props.url} isExternal>
+        <Button colorScheme="green" size="sm" px="30px" py="5px" mt="15px" rounded="sm">
+          Visit
+        </Button>
+      </Link>
     </Box>
   );
 }
