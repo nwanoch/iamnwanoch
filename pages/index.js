@@ -13,22 +13,7 @@ export default function Home() {
         <link rel="icon" href="/fav.png"/>
       </Head>
       <Hero>
-        <Header position="relative" zIndex={1} />
-        <Particles
-          zIndex={-1000000000000000000000000000000}
-          width={"100%"}
-          height={"95vh"}
-          style={{ position: "absolute", top: 0, opacity: 0.5 }}
-          params={{
-            polygon: {
-              enable: true,
-              type: "inside",
-              move: {
-                radius: 10,
-              },
-            },
-          }}
-        />
+        <Header />
         <HeroContent />
       </Hero>
     </div>
