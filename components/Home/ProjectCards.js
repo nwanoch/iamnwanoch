@@ -5,9 +5,12 @@ import React from "react";
 function ProjectCards(props) {
   return (
     <Box
+      data-aos="fade-up"
+      data-aos-duration="300"
+      // data-aos-mirror={true}
       w={{ base: "100%", md: "400px" }}
       p={"30px"}
-      br="5px"
+      rounded="md"
       bg={useColorModeValue("white", "gray.900")}
       mt={15}
       mr={{ base: "0", md: "20px" }}

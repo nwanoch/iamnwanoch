@@ -21,7 +21,7 @@ function Articles() {
           View all Articles
         </Button>
       </Link>
-      <Box width="300px" mt="5px" h="1px" bg="green.100"></Box>
+      <Box width="100%" mt="5px" h="1px" bg="green.100"></Box>
 
       <SimpleGrid columns={{ sm: 1, md: 3 }} spacing={5}>
         <ArticleCard
