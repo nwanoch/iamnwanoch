@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 function HeroContent() {
   useEffect(() => {
-    AOS.init({ offset: 300, duration: 0, once: true });
+    AOS.init({ offset: 100, duration: 0, once: false });
   }, []);
   return (
     <Flex
@@ -19,7 +19,7 @@ function HeroContent() {
     >
       <Box
         data-aos="fade-up"
-        data-aos-duration="500"
+        data-aos-duration="200"
         w={{ base: "100%", md: "65%" }}
         backgroundImage={{ base: "url('nwanochie.png')", md: " " }}
         backgroundPosition="center"
