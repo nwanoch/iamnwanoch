@@ -37,7 +37,7 @@ const SocialButton = ({ children, label, href }) => {
   );
 };
 
-export default function ContactModal() {
+export default function ContactModal({ space, mb, bg }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -48,9 +48,12 @@ export default function ContactModal() {
           bg: "#fff",
           color: "#24285B",
         }}
+        bg={bg}
         size="md"
+        ml={space}
         borderRadius="sm"
         onClick={onOpen}
+        mb={mb}
       >
         Contact me
       </Button>
