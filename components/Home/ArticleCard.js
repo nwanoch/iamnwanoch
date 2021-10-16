@@ -49,7 +49,8 @@ function ArticleCard({ articles }) {
               {`${
                 item.description.replace(/<[^>]+>/g, "").slice(0, 250) + "..."
               }`}
-            </Text>
+            </Text>{" "}
+            <Text mt="10px">Author: {item.author}</Text>
             <Link href={item.link} isExternal>
               <Button
                 size="sm"
@@ -62,7 +63,6 @@ function ArticleCard({ articles }) {
                 Read more
               </Button>
             </Link>
-            <Text mt="25px">Author: {item.author}</Text>
           </Box>
         );
       })}
