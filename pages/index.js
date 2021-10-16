@@ -24,7 +24,7 @@ export default function Home({ posts }) {
     return post.content !== "";
   });
 
-  const recentPosts = validPosts.slice(0, 3);
+  const recentPosts = validPosts.slice(0, 4);
 
   return (
     <>

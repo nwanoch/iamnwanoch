@@ -3,6 +3,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Box, Link, SimpleGrid, Text } from "@chakra-ui/layout";
 import React from "react";
 import ArticleCard from "./ArticleCard";
+import Footer from "./Footer";
 
 function Articles({ articles }) {
   return (
@@ -26,15 +27,9 @@ function Articles({ articles }) {
         </Button>
       </Link>
       <Box width="100%" mt="5px" h="1px" bg="green.100"></Box>
+      <ArticleCard articles={articles} />
 
-      <SimpleGrid columns={{ sm: 1, md: 3 }} spacing={5}>
-        <ArticleCard
-          articles={articles}
-          url="https://google.com"
-          title="Title One"
-          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus officiis neque, eveniet ab, autem dolore saepe voluptate praesentium sapiente debitis, facere assumenda optio hic! Recusandae, libero. Laudantium ipsum cumque dolores!"
-        />{" "}
-      </SimpleGrid>
+      <Footer />
     </Box>
   );
 }

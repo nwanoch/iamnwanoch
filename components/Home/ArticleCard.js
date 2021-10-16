@@ -1,16 +1,15 @@
 import { Button } from "@chakra-ui/button";
-import { Box, Link, Text } from "@chakra-ui/layout";
+import { Box, Link, Text, SimpleGrid } from "@chakra-ui/layout";
 import React from "react";
 
 function ArticleCard({ articles }) {
   return (
-    <Box>
+    <SimpleGrid columns={{ sm: 1, md: 3 }} mt="20px" spacing={5}>
       {articles.map((item) => {
         return (
           <Box
             key={item.author}
             bg="#FFF"
-            mt="20px"
             mb="20px"
             p="20px"
             br=" 2px"
@@ -45,9 +44,10 @@ function ArticleCard({ articles }) {
             >
               {item.title}
             </Text>
+            <Text mb="5px">Published: {item.pubDate.slice(0, 10)}</Text>
             <Text color="#666" lineHeight="1.5rem" fontSize="0.875rem">
               {`${
-                item.description.replace(/<[^>]+>/g, "").slice(0, 300) + "..."
+                item.description.replace(/<[^>]+>/g, "").slice(0, 250) + "..."
               }`}
             </Text>
             <Link href={item.link} isExternal>
@@ -62,10 +62,11 @@ function ArticleCard({ articles }) {
                 Read more
               </Button>
             </Link>
+            <Text mt="25px">Author: {item.author}</Text>
           </Box>
         );
       })}
-    </Box>
+    </SimpleGrid>
   );
 }
 
