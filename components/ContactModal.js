@@ -42,7 +42,6 @@ export default function ContactModal({ space, mb, bg }) {
   return (
     <>
       <Button
-        bg="#24285B"
         color="#fff"
         _hover={{
           bg: "#fff",
