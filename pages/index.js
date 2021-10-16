@@ -25,7 +25,6 @@ export default function Home({ posts }) {
   });
 
   const recentPosts = validPosts.slice(0, 3);
-  console.log(recentPosts);
 
   return (
     <>

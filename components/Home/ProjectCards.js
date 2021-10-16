@@ -9,14 +9,16 @@ function ProjectCards(props) {
       data-aos-duration="300"
       w={{ base: "100%", md: "400px" }}
       p={"30px"}
+      cursor="pointer"
       rounded="md"
       bg={useColorModeValue("white", "gray.900")}
       mt={15}
       mr={{ base: "0", md: "20px" }}
       color="blackAlpha.700"
-      boxShadow={"xl"}
+      boxShadow={"lg"}
+      transition=" 0.3s ease"
       _hover={{
-        boxShadow: "2xl",
+        boxShadow: "xl",
         transition: "ease 200ms",
       }}
       _active={{

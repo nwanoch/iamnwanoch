@@ -10,7 +10,11 @@ function Articles({ articles }) {
       <Text color="#fff" fontSize="2xl" fontWeight="medium">
         Recent Articles
       </Text>
-      <Link href="/articles" _hover={{ textDecoration: "none" }}>
+      <Link
+        href="https://nwanoch.medium.com/"
+        isExternal
+        _hover={{ textDecoration: "none" }}
+      >
         <Button
           rightIcon={<ArrowForwardIcon />}
           bg="#008080"
