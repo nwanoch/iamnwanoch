@@ -7,18 +7,24 @@ function ProjectCards(props) {
     <Box
       data-aos="fade-up"
       data-aos-duration="300"
-      // data-aos-mirror={true}
       w={{ base: "100%", md: "400px" }}
       p={"30px"}
+      cursor="pointer"
       rounded="md"
       bg={useColorModeValue("white", "gray.900")}
       mt={15}
       mr={{ base: "0", md: "20px" }}
       color="blackAlpha.700"
-      boxShadow={"xl"}
+      boxShadow={"lg"}
+      transition=" 0.3s ease"
       _hover={{
-        boxShadow: "2xl",
+        boxShadow: "xl",
         transition: "ease 200ms",
+      }}
+      _active={{
+        boxShadow: "none",
+        transformOrigin: "center",
+        transform: " scale(0.98)",
       }}
     >
       <Text color="gray.600">{props.title}</Text>
