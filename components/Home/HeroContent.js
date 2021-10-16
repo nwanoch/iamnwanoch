@@ -4,6 +4,7 @@ import { Box, Stack, Text } from "@chakra-ui/layout";
 import { Image, Button } from "@chakra-ui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ContactModal from "../ContactModal";
 
 function HeroContent() {
   useEffect(() => {
@@ -59,19 +60,6 @@ function HeroContent() {
 
         <Stack spacing={4} direction="row" align="center" mt="5">
           {/* <Button
-            px={6}
-            bg="#fff"
-            color="#24285B"
-            _hover={{
-              bg: "#FFD201",
-              color: "#fff",
-            }}
-            size="md"
-            borderRadius="sm"
-          >
-            Projects
-          </Button> */}
-          <Button
             bg="#24285B"
             color="#fff"
             _hover={{
@@ -82,7 +70,8 @@ function HeroContent() {
             borderRadius="sm"
           >
             Contact me
-          </Button>
+          </Button> */}
+          <ContactModal/>
         </Stack>
       </Box>{" "}
       <Box
