@@ -42,7 +42,7 @@ const MenuIcon = () => (
   </svg>
 );
 
-const Header = (props) => {
+const Header = ({ scrollProject, scrollArticle }) => {
   const [show, setShow] = React.useState(false);
   const toggleMenu = () => setShow(!show);
   return (
@@ -56,7 +56,6 @@ const Header = (props) => {
       py={{ base: 4, md: 12 }}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
-      {...props}
       position="sticky"
       top="0"
       zIndex="5555555555555554"
@@ -89,8 +88,8 @@ const Header = (props) => {
           pt={[4, 4, 0, 0]}
         >
           <MenuItem to="/">Home</MenuItem>
-          <MenuItem to="#">Projects</MenuItem>
-          <MenuItem to="/articles">Article </MenuItem>
+          <MenuItem onClick={scrollProject}>Projects</MenuItem>
+          <MenuItem onClick={scrollArticle}>Article </MenuItem>
           <ContactModal space={10} bg="teal" />
         </Flex>
         <Slide
@@ -113,8 +112,8 @@ const Header = (props) => {
             mt="-20px"
           >
             <MenuItem to="/">Home</MenuItem>
-            <MenuItem to="#">Projects</MenuItem>
-            <MenuItem to="/articles">Article </MenuItem>
+            <MenuItem onClick={scrollProject}>Projects</MenuItem>
+            <MenuItem onClick={scrollArticle}>Article </MenuItem>
             <ContactModal space={0} mb="20px" bg="teal" />
           </Flex>
         </Slide>

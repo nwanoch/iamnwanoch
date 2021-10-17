@@ -7,7 +7,13 @@ import Footer from "./Footer";
 
 function Articles({ articles }) {
   return (
-    <Box width={"100%"} px={{ base: 8, md: 32 }} py={8} bg="#008080">
+    <Box
+      width={"100%"}
+      px={{ base: 8, md: 32 }}
+      py={8}
+      bg="#008080"
+      className="article"
+    >
       <Text color="#fff" fontSize="2xl" fontWeight="medium">
         Recent Articles
       </Text>
