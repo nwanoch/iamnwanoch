@@ -79,6 +79,7 @@ const Header = ({ scrollProject, scrollArticle }) => {
       px={{ base: 8, md: 32 }}
       py={{ base: 0, md: 12 }}
       pt={{ base: 5, md: 5 }}
+      pb={{ base: 6 }}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       position="sticky"
