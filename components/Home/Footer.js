@@ -59,7 +59,7 @@ export default function Footer() {
         <Text>© {new Date().getFullYear()} Emmanuel Nwanochie.</Text>
         <Stack direction={"row"} spacing={6}>
           <Link
-            href={"https://www.linkedin.com/in/emmanuel-nwanochie/"}
+            href={"https://www.linkedin.com/in/emmanuel-nwanochie"}
             isExternal
           >
             <SocialButton
