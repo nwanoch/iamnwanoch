@@ -6,17 +6,16 @@ import { Slide, SlideFade } from "@chakra-ui/transition";
 import { useDisclosure } from "@chakra-ui/hooks";
 import ContactModal from "../ContactModal";
 import { scroller } from "react-scroll";
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+const MenuItem = ({ children, isLast }) => {
   return (
     <Text
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
       mr={{ base: 0, sm: isLast ? 0 : 8, md: isLast ? 0 : 0 }}
       ml={{ base: 0, sm: isLast ? 0 : 6, md: isLast ? 0 : 12 }}
       display="block"
-      {...rest}
       color="white"
     >
-      <Link href={to}>{children}</Link>
+      <Box>{children}</Box>
     </Text>
   );
 };
@@ -56,6 +55,14 @@ const Header = ({ scrollProject, scrollArticle }) => {
   };
   const scrollToArticles = () => {
     scroller.scrollTo("article", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+    setShow(!show);
+  };
+  const scrollToHome = () => {
+    scroller.scrollTo("home", {
       duration: 800,
       delay: 0,
       smooth: "easeInOutQuart",
@@ -104,7 +111,7 @@ const Header = ({ scrollProject, scrollArticle }) => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem to="/">Home</MenuItem>
+          <MenuItem>Home</MenuItem>
           <MenuItem onClick={scrollProject}>Projects</MenuItem>
           <MenuItem onClick={scrollArticle}>Article </MenuItem>
           <ContactModal space={10} bg="teal" />
@@ -128,9 +135,21 @@ const Header = ({ scrollProject, scrollArticle }) => {
             display={{ base: "flex", md: "none" }}
             mt="-20px"
           >
-            <MenuItem to="/">Home</MenuItem>
-            <MenuItem onClick={scrollToProjects}>Projects</MenuItem>
-            <MenuItem onClick={scrollToArticles}>Article </MenuItem>
+            <MenuItem>
+              <Box p="10px" onClick={scrollToHome}>
+                Home
+              </Box>
+            </MenuItem>
+            <MenuItem>
+              <Box p="10px" onClick={scrollToProjects}>
+                Projects
+              </Box>
+            </MenuItem>
+            <MenuItem>
+              <Box p="10px" onClick={scrollToArticles}>
+                Article
+              </Box>{" "}
+            </MenuItem>
             <ContactModal space={0} mb="20px" bg="teal" />
           </Flex>
         </Slide>
