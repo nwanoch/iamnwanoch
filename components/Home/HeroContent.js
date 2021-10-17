@@ -40,7 +40,7 @@ function HeroContent() {
           fontWeight="bold"
           lineHeight="110%"
         >
-          Immersed In&nbsp;
+           Immersed In&nbsp;
           <Text as="kbd" display={{ base: "block", md: "none" }}></Text>
           <Text as="span" color="#FFD201">
             Designing

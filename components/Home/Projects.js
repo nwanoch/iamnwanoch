@@ -2,11 +2,17 @@ import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/layout";
 import { Divider } from "@chakra-ui/react";
 import React from "react";
 import ProjectCards from "./ProjectCards";
+import { useRef } from "react";
 
 function Projects() {
   return (
     <Box width={"100%"} px={{ base: 8, md: 32 }} py={8}>
-      <Text color="#008080" fontSize="2xl" fontWeight="medium">
+      <Text
+        color="#008080"
+        fontSize="2xl"
+        fontWeight="medium"
+        className="project"
+      >
         Projects
       </Text>
       <Text color="gray.600">Collections of my works</Text>

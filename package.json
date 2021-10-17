@@ -21,6 +21,7 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
     "react-particles-js": "^3.5.3",
+    "react-scroll": "^1.8.4",
     "rss-to-json": "^2.0.2",
     "tsparticles": "^1.35.4"
   },
