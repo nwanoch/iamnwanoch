@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import Link from "next/link";
 import { Slide, SlideFade } from "@chakra-ui/transition";
 import { useDisclosure } from "@chakra-ui/hooks";
+import ContactModal from "../ContactModal";
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
     <Text
@@ -88,7 +89,7 @@ const Header = (props) => {
           <MenuItem to="/">Home</MenuItem>
           <MenuItem to="/about">About me</MenuItem>
           <MenuItem to="/articles">Article </MenuItem>
-          <MenuItem to="/contact">Contact me </MenuItem>
+          <ContactModal space={10} bg="teal" />
         </Flex>
         <Slide
           display={{ base: "block", md: "none" }}
@@ -110,7 +111,7 @@ const Header = (props) => {
             <MenuItem to="/">Home</MenuItem>
             <MenuItem to="/about">About me</MenuItem>
             <MenuItem to="/articles">Article </MenuItem>
-            <MenuItem to="/contact">Contact me </MenuItem>
+            <ContactModal space={0} mb="20px" bg="teal" />
           </Flex>
         </Slide>
       </Box>

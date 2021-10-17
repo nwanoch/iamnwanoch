@@ -71,7 +71,7 @@ function HeroContent() {
           >
             Contact me
           </Button> */}
-          <ContactModal/>
+          <ContactModal bg="#24285B" />
         </Stack>
       </Box>{" "}
       <Box
