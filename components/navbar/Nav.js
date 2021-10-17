@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Slide, SlideFade } from "@chakra-ui/transition";
 import { useDisclosure } from "@chakra-ui/hooks";
 import ContactModal from "../ContactModal";
+import { scroller } from "react-scroll";
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
     <Text
@@ -45,6 +46,22 @@ const MenuIcon = () => (
 const Header = ({ scrollProject, scrollArticle }) => {
   const [show, setShow] = React.useState(false);
   const toggleMenu = () => setShow(!show);
+  const scrollToProjects = () => {
+    scroller.scrollTo("project", {
+      duration: 500,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+    setShow(!show);
+  };
+  const scrollToArticles = () => {
+    scroller.scrollTo("article", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+    setShow(!show);
+  };
   return (
     <Flex
       as="nav"
@@ -112,8 +129,8 @@ const Header = ({ scrollProject, scrollArticle }) => {
             mt="-20px"
           >
             <MenuItem to="/">Home</MenuItem>
-            <MenuItem onClick={scrollProject}>Projects</MenuItem>
-            <MenuItem onClick={scrollArticle}>Article </MenuItem>
+            <MenuItem onClick={scrollToProjects}>Projects</MenuItem>
+            <MenuItem onClick={scrollToArticles}>Article </MenuItem>
             <ContactModal space={0} mb="20px" bg="teal" />
           </Flex>
         </Slide>

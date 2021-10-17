@@ -21,28 +21,10 @@ export const getStaticProps = async () => {
     },
   };
 };
-export default function Home({ posts }) {
-  const scrollToProjects = () => {
-    scroller.scrollTo("project", {
-      duration: 500,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
-  const scrollToArticles = () => {
-    scroller.scrollTo("article", {
-      duration: 500,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
-  const scrollToHome = () => {
-    scroller.scrollTo("home", {
-      duration: 500,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
+export default function Home({ posts }) { 
+  
+ 
+  
   const validPosts = posts.filter((post) => {
     return post.content !== "";
   });
@@ -57,9 +39,9 @@ export default function Home({ posts }) {
         <link rel="icon" href="/fav.png" />
       </Head>{" "}
       <Header
-        scrollProject={scrollToProjects}
-        scrollArticle={scrollToArticles}
-        scrollHome={scrollToHome}
+        // scrollProject={scrollToProjects}
+        // scrollArticle={scrollToArticles}
+        // scrollHome={scrollToHome}
       />
       <Hero>
         <HeroContent />
