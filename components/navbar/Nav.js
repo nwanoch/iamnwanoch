@@ -52,12 +52,14 @@ const Header = (props) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
       px={{ base: 8, md: 32 }}
       py={{ base: 4, md: 12 }}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       {...props}
+      position="sticky"
+      top="0"
+      zIndex="5555555555555554"
     >
       <Flex align="center">
         <Logo
@@ -87,7 +89,7 @@ const Header = (props) => {
           pt={[4, 4, 0, 0]}
         >
           <MenuItem to="/">Home</MenuItem>
-          <MenuItem to="/about">About me</MenuItem>
+          <MenuItem to="#">Projects</MenuItem>
           <MenuItem to="/articles">Article </MenuItem>
           <ContactModal space={10} bg="teal" />
         </Flex>
@@ -97,9 +99,10 @@ const Header = (props) => {
           unmountOnExit={true}
           direction="left"
           style={{ marginTop: "14vh" }}
+          mt="0"
         >
           <Flex
-            position="relative"
+            position="sticky"
             zIndex={5553}
             align="center"
             bg="#008080"
@@ -107,9 +110,10 @@ const Header = (props) => {
             direction={["column", "row", "row", "row"]}
             pt={[4, 4, 0, 0]}
             display={{ base: "flex", md: "none" }}
+            mt="-20px"
           >
             <MenuItem to="/">Home</MenuItem>
-            <MenuItem to="/about">About me</MenuItem>
+            <MenuItem to="#">Projects</MenuItem>
             <MenuItem to="/articles">Article </MenuItem>
             <ContactModal space={0} mb="20px" bg="teal" />
           </Flex>
