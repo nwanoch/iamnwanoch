@@ -77,11 +77,12 @@ const Header = ({ scrollProject, scrollArticle }) => {
       wrap="wrap"
       w="100%"
       px={{ base: 8, md: 32 }}
-      py={{ base: 4, md: 12 }}
+      py={{ base: 0, md: 12 }}
+      pt={{ base: 5, md: 5 }}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       position="sticky"
-      top="0"
+      top={-4}
       zIndex="5555555555555554"
     >
       <Flex align="center">
@@ -114,7 +115,7 @@ const Header = ({ scrollProject, scrollArticle }) => {
           <MenuItem>Home</MenuItem>
           <MenuItem onClick={scrollProject}>Projects</MenuItem>
           <MenuItem onClick={scrollArticle}>Article </MenuItem>
-          <ContactModal space={10} bg="teal" />
+          {/* <ContactModal space={10} bg="teal" /> */}
         </Flex>
         <Slide
           display={{ base: "block", md: "none" }}
@@ -126,14 +127,14 @@ const Header = ({ scrollProject, scrollArticle }) => {
         >
           <Flex
             position="sticky"
-            zIndex={5553}
+            zIndex={0}
             align="center"
             bg="#008080"
             justify={["center", "space-between", "flex-end", "flex-end"]}
             direction={["column", "row", "row", "row"]}
             pt={[4, 4, 0, 0]}
             display={{ base: "flex", md: "none" }}
-            mt="-20px"
+            mt="-50px"
           >
             <MenuItem>
               <Box p="10px" onClick={scrollToHome}>
@@ -150,7 +151,7 @@ const Header = ({ scrollProject, scrollArticle }) => {
                 Article
               </Box>{" "}
             </MenuItem>
-            <ContactModal space={0} mb="20px" bg="teal" />
+            {/* <ContactModal space={0} mb="20px" bg="teal" /> */}
           </Flex>
         </Slide>
       </Box>
