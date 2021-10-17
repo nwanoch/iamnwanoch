@@ -8,15 +8,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import {
-  FaInstagram,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedin,
-  FaGithub,
-  FaWhatsapp,
-} from "react-icons/fa";
-import { ReactNode } from "react";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import Logo from "../navbar/Logo";
 
 const SocialButton = ({ children, label, href }) => {
@@ -59,22 +51,16 @@ export default function Footer() {
         <Text>© {new Date().getFullYear()} Emmanuel Nwanochie.</Text>
         <Stack direction={"row"} spacing={6}>
           <Link
-            href={"https://www.linkedin.com/in/emmanuel-nwanochie"}
+            href={"https://www.linkedin.com/in/emmanuel-nwanochie/"}
             isExternal
           >
-            <SocialButton
-              as="a"
-              target="_blank"
-              label={"Emmanuel Nwanochies LinkedIn"}
-            >
+            <SocialButton label={"Emmanuel Nwanochies LinkedIn"}>
               <FaLinkedin />
             </SocialButton>
           </Link>
           <Link
             isExternal
-            href={
-              "https://wa.me/%2B2349154055903?text=Hi%20Emmanuel%2C%20I%20just%20reached%20out%20to%20you%20from%20your%20website.%20I%20am%20_"
-            }
+            href={"https://wa.me/%2B2349154055903?text=Hi%20Emmanuel%2C%20I%20just%20reached%20out%20to%20you%20from%20your%20website.%20I%20am%20_" }
           >
             <SocialButton label={"Emmanuel Nwanochies Whatsapp"}>
               <FaWhatsapp />
