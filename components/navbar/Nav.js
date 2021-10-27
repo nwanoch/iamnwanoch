@@ -79,12 +79,12 @@ const Header = ({ scrollProject, scrollArticle }) => {
       px={{ base: 8, md: 32 }}
       py={{ base: 0, md: 12 }}
       pt={{ base: 5, md: 5 }}
-      pb={{ base: 6 }}
+      // pb={{ base: 6 }}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       position="sticky"
       top={-4}
-      zIndex="5555555555555554"
+      zIndex={5555555555555554}
     >
       <Flex align="center">
         <Logo
@@ -124,7 +124,7 @@ const Header = ({ scrollProject, scrollArticle }) => {
           unmountOnExit={true}
           direction="left"
           style={{ marginTop: "14vh" }}
-          mt="0"
+          mt="2px"
         >
           <Flex
             position="sticky"
