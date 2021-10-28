@@ -18,7 +18,7 @@ function Projects() {
       <Text color="gray.600">Collections of my works</Text>
       <Box width="100%" mt="5px" h="1px" bg="green.100"></Box>
 
-      <SimpleGrid columns={{ sm: 1, md: 3 }} spacing={5}>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={3}>
         <ProjectCards
           url="https://google.com"
           title="Title One"

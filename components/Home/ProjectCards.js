@@ -7,7 +7,8 @@ function ProjectCards(props) {
     <Box
       data-aos="fade-up"
       data-aos-duration="300"
-      w={{ base: "100%", md: "400px" }}
+      minW={{ base: "100%", md: "300px" }}
+     
       p={"30px"}
       cursor="pointer"
       rounded="md"
