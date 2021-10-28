@@ -8,7 +8,6 @@ function ProjectCards(props) {
       data-aos="fade-up"
       data-aos-duration="300"
       minW={{ base: "100%", md: "300px" }}
-     
       p={"30px"}
       cursor="pointer"
       rounded="md"
@@ -38,6 +37,9 @@ function ProjectCards(props) {
       <Text mt="15px" color="gray.600">
         {" "}
         {props.content}
+      </Text>
+      <Text mt="5px" color="green" fontWeight="">
+        Tools: {props.stack}
       </Text>
       <Link href={props.url} isExternal>
         <Button
