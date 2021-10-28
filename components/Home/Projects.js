@@ -46,7 +46,7 @@ function Projects() {
         <ProjectCards
           url="http://kelouchendu.web.app/"
           title="Kelo Uchendu"
-          content="Personal website of uchendu kelo hero, a climate organiser."
+          content="Personal website of uchendu kelo hero, a climate organiser. An individual with a strong background knowledge on environmental and climate change issues, and a passion to provide solutions to these challenges. Demonstrated strong people skills such as team working, grassroots mobilization and leadership in previous roles. Seeking to pursue a career in assisting the transition to a low carbon economy."
           stack=" React.js, Html, css etc."
         />
       </SimpleGrid>
