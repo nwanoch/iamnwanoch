@@ -26,23 +26,23 @@ function Projects() {
           stack="Next.Js, React.js, MongoDB, Node.js, Jwt-authentication, Chakra-Ui, Redux etc."
         />{" "}
         <ProjectCards
-          url="https://paygo.vercel.app"
+          url="https://pay-go-admin-web-ap-p.vercel.app/"
           title="Admin Management Dashboard"
           content="A typical mirror image I built for a mobile money application admin. Developed to allow administrator of a virtual mobile application to allow admin to view all registered users on their platform, set current settings of the virtual mobile application. To get access, username: test@gmail.com, password: wekeepmoving"
           stack="Next.Js, React.js, Chakra-Ui, Redux etc."
         />{" "}
         <ProjectCards
-          url="https://zentrumit.com"
+          url="http://zentrumit.com"
           title="Zentrum Technologies"
           content="Company website for one of the beneficiaries of the acumen rockeller foundation innovation prize 2020."
-          stack=" React.js, MongoDB, Node.js, Html, css etc."
+          stack=" ejs, nodejs, expressjs, Html, css etc."
         />{" "}
         <ProjectCards
           url="https://seerg.org"
           title="Sustainable Energy Engr. Research Group"
           content="The Sustainable Energy Engineering Research Group (SEERG) is the leading research group in the Department of Mechanical Engineering, University of Nigeria, Nsukka, Nigeria. The research group has grown since its inception in 2015 to incorporate bachelor, master and PhD students exploring the broad energy science and engineering research fields, including primary, applied and multidisciplinary studies."
           stack=" React.js, MongoDB, Node.js, Html, css etc."
-        />{" "}
+        />
         <ProjectCards
           url="http://kelouchendu.web.app/"
           title="Kelo Uchendu"
