@@ -77,14 +77,14 @@ const Header = ({ scrollProject, scrollArticle }) => {
       wrap="wrap"
       w="100%"
       px={{ base: 8, md: 32 }}
-      py={{ base: 0, md: 12 }}
-      pt={{ base: 5, md: 5 }}
-      pb={{ base: 6 }}
+      py={{ base: 0, md: 5 }}
+      pt={{ base: 4, md: 5 }}
+      // pb={{ base: 6 }}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       position="sticky"
       top={-4}
-      zIndex="5555555555555554"
+      zIndex={5555555555555554}
     >
       <Flex align="center">
         <Logo
@@ -113,10 +113,21 @@ const Header = ({ scrollProject, scrollArticle }) => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem>Home</MenuItem>
-          <MenuItem onClick={scrollProject}>Projects</MenuItem>
-          <MenuItem onClick={scrollArticle}>Article </MenuItem>
-          {/* <ContactModal space={10} bg="teal" /> */}
+          <MenuItem>
+            <Box p="10px" onClick={scrollToHome} cursor="pointer">
+              Home
+            </Box>
+          </MenuItem>
+          <MenuItem>
+            <Box p="10px" onClick={scrollToProjects} cursor="pointer">
+              Projects
+            </Box>
+          </MenuItem>
+          <MenuItem>
+            <Box p="10px" onClick={scrollToArticles} cursor="pointer">
+              Article
+            </Box>{" "}
+          </MenuItem>
         </Flex>
         <Slide
           display={{ base: "block", md: "none" }}
@@ -124,7 +135,7 @@ const Header = ({ scrollProject, scrollArticle }) => {
           unmountOnExit={true}
           direction="left"
           style={{ marginTop: "14vh" }}
-          mt="0"
+          mt="2px"
         >
           <Flex
             position="sticky"

@@ -37,11 +37,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/fav.png" />
       </Head>{" "}
       <Box className="home"></Box>
-      <Header
-      // scrollProject={scrollToProjects}
-      // scrollArticle={scrollToArticles}
-      // scrollHome={scrollToHome}
-      />
+      <Header />
       <Hero>
         <HeroContent />
       </Hero>

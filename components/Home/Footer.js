@@ -51,24 +51,27 @@ export default function Footer() {
         <Text>© {new Date().getFullYear()} Emmanuel Nwanochie.</Text>
         <Stack direction={"row"} spacing={6}>
           <Link
-            href={"https://www.linkedin.com/in/emmanuel-nwanochie/"}
+            href={
+              "https://wa.me/%2B2349154055903?text=Hi%20Emmanuel%2C%20I%20just%20reached%20out%20to%20you%20from%20your%20website.%20I%20am%20_"
+            }
             isExternal
-          >
-            <SocialButton label={"Emmanuel Nwanochies LinkedIn"}>
-              <FaLinkedin />
-            </SocialButton>
-          </Link>
-          <Link
-            isExternal
-            href={"https://wa.me/%2B2349154055903?text=Hi%20Emmanuel%2C%20I%20just%20reached%20out%20to%20you%20from%20your%20website.%20I%20am%20_" }
           >
             <SocialButton label={"Emmanuel Nwanochies Whatsapp"}>
               <FaWhatsapp />
             </SocialButton>
           </Link>
-          <Link isExternal href={"https://github.com/wenotch"}>
+          <Link href="https://github.com/wenotch" isExternal>
             <SocialButton label={"Emmanuel Nwanochie's Github profile"}>
               <FaGithub />
+            </SocialButton>
+          </Link>
+
+          <Link
+            href={"https://www.linkedin.com/in/emmanuel-nwanochie/"}
+            isExternal
+          >
+            <SocialButton label={"Emmanuel Nwanochies LinkedIn"}>
+              <FaLinkedin />
             </SocialButton>
           </Link>
         </Stack>
