@@ -6,6 +6,7 @@ import { Slide, SlideFade } from "@chakra-ui/transition";
 import { useDisclosure } from "@chakra-ui/hooks";
 import ContactModal from "../ContactModal";
 import { scroller } from "react-scroll";
+
 const MenuItem = ({ children, isLast }) => {
   return (
     <Text

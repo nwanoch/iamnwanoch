@@ -1,6 +1,7 @@
 import { Button } from "@chakra-ui/button";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Box, Link, Text } from "@chakra-ui/layout";
+import { Image } from "@chakra-ui/react";
 import React from "react";
 function ProjectCards(props) {
   return (
@@ -27,6 +28,7 @@ function ProjectCards(props) {
         transform: " scale(0.98)",
       }}
     >
+      <Image src={props.img} mb="20px" />
       <Text color="gray.600">{props.title}</Text>
       <Box
         w="100%"
