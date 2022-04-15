@@ -2,6 +2,7 @@ import {
   Box,
   chakra,
   Container,
+  Divider,
   Link,
   Stack,
   Text,
@@ -60,12 +61,13 @@ export default function Footer() {
               <FaWhatsapp />
             </SocialButton>
           </Link>
+          <Divider />
           <Link href="https://github.com/wenotch" isExternal>
             <SocialButton label={"Emmanuel Nwanochie's Github profile"}>
               <FaGithub />
             </SocialButton>
           </Link>
-
+          <Divider />
           <Link
             href={"https://www.linkedin.com/in/emmanuel-nwanochie/"}
             isExternal
