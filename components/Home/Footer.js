@@ -57,7 +57,7 @@ export default function Footer() {
             }
             isExternal
           >
-            <SocialButton label={"Emmanuel Nwanochies Whatsapp"}>
+            <SocialButton label={"Emmanuel Nwanochie Whatsapp"}>
               <FaWhatsapp />
             </SocialButton>
           </Link>
