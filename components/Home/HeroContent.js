@@ -52,7 +52,7 @@ function HeroContent() {
           &nbsp;Web Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
-          A software developer with about 2yrs + experience in designing,
+          A software developer with about 3yrs + experience in designing,
           developing and testing web applications. Uses Reactjs, Nextjs, Redux,
           TailwindCss, Chakra-Ui, Nodejs amongst other tools to effectively
           translate user and business needs into functional softwares codes.
