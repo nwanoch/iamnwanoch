@@ -40,7 +40,7 @@ function HeroContent() {
           fontWeight="bold"
           lineHeight="110%"
         >
-           Immersed In&nbsp;
+          Immersed In&nbsp;
           <Text as="kbd" display={{ base: "block", md: "none" }}></Text>
           <Text as="span" color="#FFD201">
             Designing
@@ -52,10 +52,11 @@ function HeroContent() {
           &nbsp;Web Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
-          A software developer with about 3yrs + experience in designing,
-          developing and testing web applications. Uses Reactjs, Nextjs, Redux,
-          TailwindCss, Chakra-Ui, Nodejs amongst other tools to effectively
-          translate user and business needs into functional softwares codes.
+          A software developer with about {new Date().getFullYear() - 2019}
+          yrs + experience in designing, developing and testing web
+          applications. Uses Reactjs, Nextjs, Redux, TailwindCss, Chakra-Ui,
+          Nodejs amongst other tools to effectively translate user and business
+          needs into functional softwares codes.
         </Text>
 
         <Stack spacing={4} direction="row" align="center" mt="5">
