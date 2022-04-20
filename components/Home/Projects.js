@@ -20,6 +20,12 @@ function Projects() {
 
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={3}>
         <ProjectCards
+          img="/polo.svg"
+          url="http://hiddenone.vercel.app/"
+          title="Polo App"
+          content="Developed using reactjs, Chakra-Ui, Redux etc. A landing page for a gaming app."
+        />{" "}
+        <ProjectCards
           img="/blarkmate.svg"
           url="https://blarkmate.vercel.app/"
           title="BlarkMate Shop"
@@ -46,12 +52,6 @@ function Projects() {
           title="Sustainable Energy Engr. Research Group"
           content="The Sustainable Energy Engineering Research Group (SEERG) is the leading research group in the Department of Mechanical Engineering, University of Nigeria, Nsukka, Nigeria. The research group has grown since its inception in 2015 to incorporate bachelor, master and PhD students exploring the broad energy science and engineering research fields, including primary, applied and multidisciplinary studies."
           stack=" React.js, MongoDB, Node.js, Html, css etc."
-        />{" "}
-        <ProjectCards
-          img="/polo.svg"
-          url="http://hiddenone.vercel.app/"
-          title="Polo App"
-          content="Developed using reactjs, Chakra-Ui, Redux etc. A landing page for a gaming app."
         />{" "}
         {/* <ProjectCards
           url="http://kelouchendu.web.app/"
