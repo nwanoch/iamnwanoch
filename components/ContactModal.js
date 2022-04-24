@@ -11,6 +11,7 @@ import {
   ModalOverlay,
 } from "@chakra-ui/modal";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { AiFillMediumCircle } from "react-icons/ai";
 import { VisuallyHidden, chakra, useColorModeValue } from "@chakra-ui/react";
 
 const SocialButton = ({ children, label, href }) => {
@@ -74,7 +75,7 @@ export default function ContactModal({ space, mb, bg }) {
                 Emmanuelnwanochie247@gmail.com
               </Text>
             </Text>
-            <Text mb="10px">Linkedin Github Whatsapp</Text>
+            <Text mb="10px">Linkedin, Github, Whatsapp, Medium</Text>
 
             <Stack direction={"row"} spacing={6}>
               <Link
@@ -88,7 +89,7 @@ export default function ContactModal({ space, mb, bg }) {
                 >
                   <FaLinkedin />
                 </SocialButton>
-              </Link>
+              </Link>{" "}
               <Link
                 isExternal
                 href={
@@ -98,12 +99,24 @@ export default function ContactModal({ space, mb, bg }) {
                 <SocialButton label={"Emmanuel Nwanochies Whatsapp"}>
                   <FaWhatsapp />
                 </SocialButton>
-              </Link>
-              <Link isExternal href={"https://github.com/wenotch"}>
+              </Link>{" "}
+              <Link
+                isExternal
+                href={"https://https://nwanoch.medium.com/.com/wenotch"}
+              >
                 <SocialButton label={"Emmanuel Nwanochie's Github profile"}>
                   <FaGithub />
                 </SocialButton>
-              </Link>
+              </Link>{" "}
+              <Link href={"https://nwanoch.medium.com/"} isExternal>
+                <SocialButton
+                  as="a"
+                  target="_blank"
+                  label={"Emmanuel Nwanochies Medium Profile"}
+                >
+                  <AiFillMediumCircle />
+                </SocialButton>
+              </Link>{" "}
             </Stack>
           </ModalBody>
 
