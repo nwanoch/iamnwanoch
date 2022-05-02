@@ -9,7 +9,7 @@ import React, { useRef } from "react";
 import { scroller } from "react-scroll";
 import { Box } from "@chakra-ui/layout";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@nwanoch"
   );
