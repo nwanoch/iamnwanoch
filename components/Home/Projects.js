@@ -53,12 +53,6 @@ function Projects() {
           content="The Sustainable Energy Engineering Research Group (SEERG) is the leading research group in the Department of Mechanical Engineering, University of Nigeria, Nsukka, Nigeria. The research group has grown since its inception in 2015 to incorporate bachelor, master and PhD students exploring the broad energy science and engineering research fields, including primary, applied and multidisciplinary studies."
           stack=" React.js, MongoDB, Node.js, Html, css etc."
         />{" "}
-        {/* <ProjectCards
-          url="http://kelouchendu.web.app/"
-          title="Kelo Uchendu"
-          content="Personal website of uchendu kelo hero, a climate organiser. An individual with a strong background knowledge on environmental and climate change issues, and a passion to provide solutions to these challenges. Demonstrated strong people skills such as team working, grassroots mobilization and leadership in previous roles. Seeking to pursue a career in assisting the transition to a low carbon economy."
-          stack=" React.js, Html, css etc."
-        /> */}
       </SimpleGrid>
     </Box>
   );
