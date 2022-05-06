@@ -49,14 +49,15 @@ function HeroContent() {
           <Text as="span" color="#FFD201">
             Developing
           </Text>
-          &nbsp;Web Applications
+          &nbsp;Web and Mobile Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A software developer with about {new Date().getFullYear() - 2019}
           yrs + experience in designing, developing and testing web
-          applications. Uses Reactjs, Nextjs, Redux, TailwindCss, Chakra-Ui,
-          Nodejs amongst other tools to effectively translate user and business
-          needs into functional softwares codes.
+          applications. Uses Nextjs, tailwindcss, Node and Typescript for web
+          development and Flutter for mobile app development among other tools to
+          effectively translate user and business needs into functional
+          softwares codes.
         </Text>
 
         <Stack spacing={4} direction="row" align="center" mt="5">
