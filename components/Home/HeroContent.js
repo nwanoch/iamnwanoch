@@ -30,7 +30,7 @@ function HeroContent() {
         backgroundRepeat="no-repeat"
       >
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
-          Hi! I am Emmanuel Nwanochie
+          Hi!  Emmanuel Nwanochie
         </Text>
 
         <Text
@@ -52,12 +52,9 @@ function HeroContent() {
           &nbsp;Web and Mobile Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
-          A software developer with about {new Date().getFullYear() - 2019}
-          yrs + experience in designing, developing and testing web
-          applications. Uses Nextjs, tailwindcss, Node and Typescript for web
-          development and Flutter for mobile app development among other tools to
-          effectively translate user and business needs into functional
-          softwares codes.
+          A Frontend developer with about {new Date().getFullYear() - 2019}
+          yrs + experience in designing and developing applications. Uses Nextjs, tailwindcss, Node and Typescript for web
+          development and Flutter for mobile app development.
         </Text>
 
         <Stack spacing={4} direction="row" align="center" mt="5">
