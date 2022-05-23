@@ -20,6 +20,13 @@ function Projects() {
 
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={3}>
         <ProjectCards
+          img="/nascodirect.jpg"
+          url="https://nascodirect.net"
+          title="Nasco Direct"
+          content=" Built an e-commerce web platform for NASCO GROUP one of the largest Fast Moving Consumer Goods (FMCG) companies in the West Africa region. The platform currently has about 500-1000 users interacting with the website daily. https://nascodirect.net"
+          stack=" Typescript, Nextjs, TailwindCss, Redux-toolkit."
+        />
+        <ProjectCards
           img="/polo.svg"
           url="http://hiddenone.vercel.app/"
           title="Polo App"
