@@ -34,7 +34,7 @@ function Projects() {
         />{" "}
         <ProjectCards
           img="/blarkmate.svg"
-          url="https://blarkmate.vercel.app/"
+          url="https://blarkmate.com/"
           title="BlarkMate Shop"
           content="A webshop for the BlarkMate brand. This Web app allows user to determine their shoe size, select color and properly customize their shoe for a comfortable fit."
           stack="Next.Js, React.js, MongoDB, Node.js, Jwt-authentication, Chakra-Ui, Redux etc."
