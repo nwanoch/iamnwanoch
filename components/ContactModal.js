@@ -102,7 +102,7 @@ export default function ContactModal({ space, mb, bg }) {
               </Link>{" "}
               <Link
                 isExternal
-                href={"https://https://nwanoch.medium.com/.com/wenotch"}
+                href={"https://github.com/wenotch"}
               >
                 <SocialButton label={"Emmanuel Nwanochie's Github profile"}>
                   <FaGithub />
