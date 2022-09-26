@@ -41,7 +41,7 @@ function ProjectCards(props) {
       >
         {/* <Image src={props.img} mb="20px" /> */}
       </Box>
-      <Text color="gray.600" fontWeight={700} mt="20px">
+      <Text color="teal" fontWeight={700} mt="20px">
         {props.title}
       </Text>
       <Box
@@ -65,7 +65,7 @@ function ProjectCards(props) {
       >
         <Link href={props.url} isExternal={props.url !== "#" ? true : false}>
           <Button
-            colorScheme={props.url === "#" ? "orange" : "green"}
+            colorScheme={props.url === "#" ? "orange" : "teal"}
             size="sm"
             px="30px"
             py="5px"
