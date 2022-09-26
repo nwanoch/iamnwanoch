@@ -10,6 +10,7 @@ function ProjectCards(props) {
       data-aos-duration="300"
       minW={{ base: "100%", md: "300px" }}
       p={"30px"}
+      position="relative"
       cursor="pointer"
       rounded="md"
       bg={useColorModeValue("white", "gray.900")}
@@ -28,8 +29,21 @@ function ProjectCards(props) {
         transform: " scale(0.98)",
       }}
     >
-      <Image src={props.img} mb="20px" />
-      <Text color="gray.600">{props.title}</Text>
+      <Box
+        minH={"170px"}
+        maxH="250px"
+        // bg="#D9D9D9"
+        w={"full"}
+        bgImage={`${props.img}`}
+        bgSize="cover"
+        bgPosition="top center"
+        overflow={"hidden"}
+      >
+        {/* <Image src={props.img} mb="20px" /> */}
+      </Box>
+      <Text color="gray.600" fontWeight={700} mt="20px">
+        {props.title}
+      </Text>
       <Box
         w="100%"
         height="4px"
@@ -40,21 +54,29 @@ function ProjectCards(props) {
         {" "}
         {props.content}
       </Text>
-      <Text mt="5px" color="green" fontWeight="">
+      <Text mb={"30px"} mt="15px" color="green" fontWeight="">
         Tools: {props.stack}
       </Text>
-      <Link href={props.url} isExternal>
-        <Button
-          colorScheme="green"
-          size="sm"
-          px="30px"
-          py="5px"
-          mt="15px"
-          rounded="sm"
-        >
-          Visit
-        </Button>
-      </Link>
+      <Box
+        position={{ base: "", md: "absolute" }}
+        left="0"
+        w="full"
+        bottom={"0px"}
+      >
+        <Link href={props.url} isExternal={props.url !== "#" ? true : false}>
+          <Button
+            colorScheme={props.url === "#" ? "orange" : "green"}
+            size="sm"
+            px="30px"
+            py="5px"
+            mt="15px"
+            rounded="sm"
+            isDisabled={props.url === "#" ? true : false}
+          >
+            {props.url === "#" ? "Confidential" : "View Project"}
+          </Button>
+        </Link>
+      </Box>
     </Box>
   );
 }

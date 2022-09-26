@@ -30,7 +30,7 @@ function HeroContent() {
         backgroundRepeat="no-repeat"
       >
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
-          Hi!  Emmanuel Nwanochie
+          Hi! Emmanuel Nwanochie
         </Text>
 
         <Text
@@ -49,27 +49,16 @@ function HeroContent() {
           <Text as="span" color="#FFD201">
             Developing
           </Text>
-          &nbsp;Web and Mobile Applications
+          &nbsp;Web Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A Frontend developer with about {new Date().getFullYear() - 2019}
-          yrs + experience in designing and developing applications. Uses Nextjs, tailwindcss, Node and Typescript for web
-          development and Flutter for mobile app development.
+          yrs + experience in designing and developing applications. Uses
+          Nextjs, React, Redux, Chakra-Ui tailwindcss, Node and Typescript to
+          build applications.
         </Text>
 
         <Stack spacing={4} direction="row" align="center" mt="5">
-          {/* <Button
-            bg="#24285B"
-            color="#fff"
-            _hover={{
-              bg: "#fff",
-              color: "#24285B",
-            }}
-            size="md"
-            borderRadius="sm"
-          >
-            Contact me
-          </Button> */}
           <ContactModal bg="#24285B" />
         </Stack>
       </Box>{" "}

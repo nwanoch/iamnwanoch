@@ -80,7 +80,6 @@ const Header = ({ scrollProject, scrollArticle }) => {
       px={{ base: 8, md: 32 }}
       py={{ base: 0, md: 5 }}
       pt={{ base: 4, md: 5 }}
-      // pb={{ base: 6 }}
       bg={"#008080"}
       color={["white", "white", "primary.700", "primary.700"]}
       position="sticky"
@@ -110,25 +109,22 @@ const Header = ({ scrollProject, scrollArticle }) => {
           display={{ base: "none", md: "flex" }}
           align="center"
           bg="#008080"
-          justify={["center", "space-between", "flex-end", "flex-end"]}
-          direction={["column", "row", "row", "row"]}
+          px={"0"}
+          justify={"space-between"}
+          direction={"row"}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem>
-            <Box p="10px" onClick={scrollToHome} cursor="pointer">
-              Home
-            </Box>
-          </MenuItem>
-          <MenuItem>
-            <Box p="10px" onClick={scrollToProjects} cursor="pointer">
-              Projects
-            </Box>
-          </MenuItem>
-          <MenuItem>
-            <Box p="10px" onClick={scrollToArticles} cursor="pointer">
-              Article
-            </Box>{" "}
-          </MenuItem>
+          <Box p="10px" onClick={scrollToHome} cursor="pointer">
+            Home
+          </Box>
+
+          <Box p="10px" onClick={scrollToProjects} cursor="pointer">
+            Projects
+          </Box>
+
+          <Box p="10px" onClick={scrollToArticles} cursor="pointer">
+            Article
+          </Box>
         </Flex>
         <Slide
           display={{ base: "block", md: "none" }}

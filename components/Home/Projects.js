@@ -20,6 +20,13 @@ function Projects() {
 
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={3}>
         <ProjectCards
+          img="/cims-system.png"
+          url="#"
+          title="Case Information Management System"
+          content="A web application that helps the UNICEF Nigeria to case of any abuse cases. It features anonymous reporting, case management, and data analysis. I focused on the frontend of the application and Developed it using Nextjs, Chakra-Ui, Tailwindcss and Redux."
+          stack=" Typescript, Nextjs, Chakra-UI and Redux-toolkit."
+        />
+        <ProjectCards
           img="/nascodirect.jpg"
           url="https://nascodirect.net"
           title="Nasco Direct"
@@ -27,39 +34,32 @@ function Projects() {
           stack=" Typescript, Nextjs, TailwindCss, Redux-toolkit."
         />
         <ProjectCards
-          img="/polo.svg"
-          url="http://hiddenone.vercel.app/"
-          title="Polo App"
-          content="Developed using reactjs, Chakra-Ui, Redux etc. A landing page for a gaming app."
-        />{" "}
-        <ProjectCards
+          img="/hr-system.png"
+          url="#"
+          title="Employee Management System"
+          content="Developed to help companies manage their employees and their tasks. I Nextjs, Redux, Chakra UI, and other technologies to build this application. It features Task Management, Leave Management, Payroll, Company communication, user dashboard, supervisor dashboard etc. The platform currently has over 1000 users."
+          stack=" Typescript, Nextjs, Chakra-UI and Redux-toolkit."
+        />
+        {/* <ProjectCards
           img="/blarkmate.svg"
           url="https://blarkmate.com/"
           title="BlarkMate Shop"
           content="A webshop for the BlarkMate brand. This Web app allows user to determine their shoe size, select color and properly customize their shoe for a comfortable fit."
           stack="Next.Js, React.js, MongoDB, Node.js, Jwt-authentication, Chakra-Ui, Redux etc."
-        />{" "}
+        />{" "} */}
         <ProjectCards
           img="/coinhereos.svg"
-          url="https://coinheros.vercel.app/"
+          url="https://coinheroes.co.uk/"
           title="Coinhereos"
           content="Developed the front end of a blockchain web-based application that allows users to carry out escrow services, trade, and invest in cryptocurrencies. Currently being developed using Reactjs, Chakra-UI, React-Redux, Axios (for API calls)"
           stack="Next.Js, React.js, Chakra-Ui, Redux etc."
         />{" "}
-        <ProjectCards
-          img="/zentrum.svg"
-          url="https://zentrumit.herokuapp.com/"
-          title="Zentrum Technologies"
-          content="Company website for one of the beneficiaries of the acumen rockeller foundation innovation prize 2020."
-          stack=" React.js, MongoDB, Node.js, Html, css etc."
-        />{" "}
-        <ProjectCards
-          img="/seerg.svg"
-          url="https://seerg.org"
-          title="Sustainable Energy Engr. Research Group"
-          content="The Sustainable Energy Engineering Research Group (SEERG) is the leading research group in the Department of Mechanical Engineering, University of Nigeria, Nsukka, Nigeria. The research group has grown since its inception in 2015 to incorporate bachelor, master and PhD students exploring the broad energy science and engineering research fields, including primary, applied and multidisciplinary studies."
-          stack=" React.js, MongoDB, Node.js, Html, css etc."
-        />{" "}
+        {/* <ProjectCards
+          img="/polo.svg"
+          url="http://hiddenone.vercel.app/"
+          title="Polo App"
+          content="Developed using reactjs, Chakra-Ui, Redux etc. A landing page for a gaming app."
+        />{" "} */}
       </SimpleGrid>
     </Box>
   );
