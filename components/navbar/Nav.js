@@ -123,7 +123,7 @@ const Header = ({ scrollProject, scrollArticle }) => {
           </Box>
 
           <Box p="10px" onClick={scrollToArticles} cursor="pointer">
-            Article
+            Articles
           </Box>
         </Flex>
         <Slide
