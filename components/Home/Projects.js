@@ -37,7 +37,7 @@ function Projects() {
           img="/hr-system.png"
           url="#"
           title="Employee Management System"
-          content="Developed to help companies manage their employees and their tasks. I Nextjs, Redux, Chakra UI, and other technologies to build this application. It features Task Management, Leave Management, Payroll, Company communication, user dashboard, supervisor dashboard etc. The platform currently has over 1000 users."
+          content="Developed to help NASCO GROUP of Companies manage their employees and their tasks. I Nextjs, Redux, Chakra UI, and other technologies to build this application. It features Task Management, Leave Management, Payroll, Company communication, user dashboard, supervisor dashboard etc. The platform currently has over 1000 users."
           stack=" Typescript, Nextjs, Chakra-UI and Redux-toolkit."
         />
         {/* <ProjectCards
