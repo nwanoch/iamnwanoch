@@ -72,7 +72,7 @@ function HeroContent() {
             bg="orange"
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1_D8uwMwGPMtpRi-PHTeESVj9Q45F169v/view?usp=sharing"
+                "https://drive.google.com/file/d/1QYAMhC5sPP6xRwlFxeGF-dyQ3owX_Gd4/view?usp=sharing"
               );
             }}
             size="md"
