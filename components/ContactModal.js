@@ -43,6 +43,7 @@ export default function ContactModal({ space, mb, bg }) {
   return (
     <>
       <Button
+        w="130px"
         color="#fff"
         _hover={{
           bg: "#fff",
@@ -100,10 +101,7 @@ export default function ContactModal({ space, mb, bg }) {
                   <FaWhatsapp />
                 </SocialButton>
               </Link>{" "}
-              <Link
-                isExternal
-                href={"https://github.com/wenotch"}
-              >
+              <Link isExternal href={"https://github.com/wenotch"}>
                 <SocialButton label={"Emmanuel Nwanochie's Github profile"}>
                   <FaGithub />
                 </SocialButton>

@@ -42,11 +42,11 @@ function HeroContent() {
         >
           Immersed In&nbsp;
           <Text as="kbd" display={{ base: "block", md: "none" }}></Text>
-          <Text as="span" color="#FFD201">
+          <Text as="span" color="orange">
             Designing
           </Text>
           &nbsp;&&nbsp; <br />
-          <Text as="span" color="#FFD201">
+          <Text as="span" color="orange">
             Developing
           </Text>
           &nbsp;Web Applications
@@ -58,8 +58,29 @@ function HeroContent() {
           build applications.
         </Text>
 
-        <Stack spacing={4} direction="row" align="center" mt="5">
-          <ContactModal bg="#24285B" />
+        <Stack spacing={7} direction="row" align="center" mt="5">
+          <ContactModal bg="#24285B" />{" "}
+          <Button
+            _focus={{
+              boxShadow: "none",
+            }}
+            colorScheme={"orange"}
+            _hover={{
+              bg: "#fff",
+              color: "#24285B",
+            }}
+            bg="orange"
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1_D8uwMwGPMtpRi-PHTeESVj9Q45F169v/view?usp=sharing"
+              );
+            }}
+            size="md"
+            borderRadius="sm"
+            w="130px"
+          >
+            Download CV
+          </Button>
         </Stack>
       </Box>{" "}
       <Box
