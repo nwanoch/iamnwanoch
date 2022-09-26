@@ -9,7 +9,7 @@ import React, { useRef } from "react";
 import { scroller } from "react-scroll";
 import { Box } from "@chakra-ui/layout";
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch(
     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@nwanoch"
   );
@@ -22,6 +22,9 @@ export const getServerSideProps = async () => {
     },
   };
 };
+
+// get props from client side
+
 export default function Home({ posts }) {
   const validPosts = posts.filter((post) => {
     return post.content !== "";
