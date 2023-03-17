@@ -20,6 +20,20 @@ function Projects() {
 
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={3}>
         <ProjectCards
+          img="/circo-main.png"
+          url="https://circo.africa"
+          title="Circo Africa"
+          content="A content-sharing platform, that lets users share video content, Livestream, view video content, and manage their wallet."
+          stack=" Typescript, Nodejs, Nextjs, MongoDb, Chakra-UI and Redux-toolkit."
+        />
+        <ProjectCards
+          img="/tialala.png"
+          url="https://tialala-web.vercel.app/"
+          title="Tialala App"
+          content="A celebrity/user connection web app. Leveraged Next.js, TypeScript, Node.js, Chakra UI, Redux, and MongoDB to build this applications"
+          stack="Typescript, Nodejs, Nextjs, MongoDb, Chakra-UI and Redux-toolkit."
+        />
+        <ProjectCards
           img="/cims-system.png"
           url="#"
           title="Case Information Management System"
