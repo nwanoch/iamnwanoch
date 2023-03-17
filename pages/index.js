@@ -44,6 +44,17 @@ export default function Home({ posts }) {
           content="Personal website of Nwanochie Emmanuel, a software developer from nigeria, exploring the power of the web"
         />
         <link rel="icon" href="/fav.png" />
+        // neccessary meta tags for SEO
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="keywords"
+          content="Nwanochie, Emmanuel, Nwanochie Emmanuel, software developer, wenotchm nwanoch, big nwanoch, nwanochie"
+        />
+        <meta name="author" content="Nwanochie Emmanuel" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>{" "}
       <Box className="home"></Box>
       <Header />

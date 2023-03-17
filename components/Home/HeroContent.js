@@ -52,10 +52,14 @@ function HeroContent() {
           &nbsp;Web Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
-          A Frontend developer with about {new Date().getFullYear() - 2019}
-          yrs + experience in designing and developing applications. Uses
-          Nextjs, React, Redux, Chakra-Ui tailwindcss, Node and Typescript to
-          build applications.
+          A skilled full-stack software developer with over{" "}
+          {new Date().getFullYear() - 2019} years of experience. Specializes in
+          React, Node.js, TypeScript, Next.js, Redux, MongoDB, and Chakra UI.
+          Built over 20 web applications that are currently in use by over 2000
+          active users. Portfolio includes employee management systems, content
+          sharing platforms, and case management systems for managing cases of
+          abuse. Passionate about building innovative solutions that meet the
+          unique needs of users and clients
         </Text>
 
         <Stack spacing={7} direction="row" align="center" mt="5">

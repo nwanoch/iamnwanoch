@@ -54,13 +54,6 @@ function Projects() {
           content="Developed to help NASCO GROUP of Companies manage their employees and their tasks. I Nextjs, Redux, Chakra UI, and other technologies to build this application. It features Task Management, Leave Management, Payroll, Company communication, user dashboard, supervisor dashboard etc. The platform currently has over 1000 users."
           stack=" Typescript, Nextjs, Chakra-UI and Redux-toolkit."
         />
-        {/* <ProjectCards
-          img="/blarkmate.svg"
-          url="https://blarkmate.com/"
-          title="BlarkMate Shop"
-          content="A webshop for the BlarkMate brand. This Web app allows user to determine their shoe size, select color and properly customize their shoe for a comfortable fit."
-          stack="Next.Js, React.js, MongoDB, Node.js, Jwt-authentication, Chakra-Ui, Redux etc."
-        />{" "} */}
         <ProjectCards
           img="/coinhereos.svg"
           url="https://coinheroes.co.uk/"
