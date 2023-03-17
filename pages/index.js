@@ -44,7 +44,6 @@ export default function Home({ posts }) {
           content="Personal website of Nwanochie Emmanuel, a software developer from nigeria, exploring the power of the web"
         />
         <link rel="icon" href="/fav.png" />
-        // neccessary meta tags for SEO
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
