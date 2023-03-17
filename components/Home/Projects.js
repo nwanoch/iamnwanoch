@@ -15,7 +15,7 @@ function Projects() {
       >
         Projects
       </Text>
-      <Text color="gray.600">Collections of my works</Text>
+      <Text color="gray.600">Some of my works</Text>
       <Box width="100%" mt="5px" h="1px" bg="green.100"></Box>
 
       <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={3}>
