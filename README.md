@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project Created with [`create-next-app`].
 
-## Getting Started
+## Getting Started!
 
 First, run the development server:
 
