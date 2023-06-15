@@ -54,7 +54,7 @@ function HeroContent() {
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A skilled full-stack software developer with over{" "}
           {new Date().getFullYear() - 2019} years of experience. Specializes in
-          React, Node.js, TypeScript, Next.js, Redux, MongoDB, and Chakra UI.
+          React,  Node.js, TypeScript, Next.js, Redux, React-Native MongoDB, and Chakra UI.
           Built over 20 web applications that are currently in use by over 2000
           active users. Portfolio includes employee management systems, content
           sharing platforms, and case management systems for managing cases of
