@@ -49,7 +49,7 @@ function HeroContent() {
           <Text as="span" color="orange">
             Developing
           </Text>
-          &nbsp;Web Applications
+          &nbsp; Web &nbsp;&&nbsp; Mobile Applications
         </Text>
         <Text color="white" fontSize={{ base: "sm", md: "lg" }}>
           A skilled full-stack software developer with over{" "}

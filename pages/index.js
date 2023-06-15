@@ -37,8 +37,8 @@ export default function Home({ posts }) {
       <Head>
         <title>
           Wenoch | Emmanuel Nwanochie, Software Engineer, on a mission to create
-          a change.
-        </title>
+          a change.{" "}
+        </title>{" "}
         <meta
           name="description"
           content="Personal website of Nwanochie Emmanuel, a software developer from nigeria, exploring the power of the web"
@@ -53,15 +53,14 @@ export default function Home({ posts }) {
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
-        ></meta>
+        ></meta>{" "}
       </Head>{" "}
-      <Box className="home"></Box>
-      <Header />
+      <Box className="home"> </Box> <Header />
       <Hero>
         <HeroContent />
-      </Hero>
+      </Hero>{" "}
       <Projects />
-      <Articles articles={recentPosts} />
+      <Articles articles={recentPosts} />{" "}
     </>
   );
 }
